@@ -17,7 +17,7 @@ export class BackendStack extends cdk.Stack {
 			branch: 'main',
 			ghOwner: 'mtliendo',
 			ghTokenName: 'github-token',
-			repo: 'sample-deploy',
+			repo: 'sample-deploy-youtube',
 		})
 	}
 }
