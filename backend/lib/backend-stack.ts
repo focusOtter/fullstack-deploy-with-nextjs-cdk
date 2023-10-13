@@ -19,5 +19,16 @@ export class BackendStack extends cdk.Stack {
 			ghTokenName: 'github-token',
 			repo: 'sample-deploy-youtube',
 		})
+
+		new cdk.CfnOutput(this, 'AppSyncAPIURL', {
+			value: amplifyAPI.graphqlUrl,
+		})
+		new cdk.CfnOutput(this, 'AppSyncAPIKey', {
+			value: amplifyAPI.apiKey || 'no api key',
+		})
+
+		new cdk.CfnOutput(this, 'AppSyncAuthType', {
+			value: amplifyAPI.resources.cfnResources.cfnGraphqlApi.authenticationType,
+		})
 	}
 }

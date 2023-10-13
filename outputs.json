@@ -1,0 +1,13 @@
+{
+  "BackendStack": {
+    "awsAppsyncApiEndpoint": "https://tvf37vrri5gnlmuu2hgwac34ay.appsync-api.us-east-1.amazonaws.com/graphql",
+    "awsAppsyncApiId": "lc2dpmu76fb6nocbyz7z53dzki",
+    "awsAppsyncApiKey": "da2-mamg2ib4szasnjasyecajjoc2a",
+    "awsAppsyncAuthenticationType": "API_KEY",
+    "AppSyncAPIURL": "https://tvf37vrri5gnlmuu2hgwac34ay.appsync-api.us-east-1.amazonaws.com/graphql",
+    "AppSyncAPIKey": "da2-mamg2ib4szasnjasyecajjoc2a",
+    "amplifyApiModelSchemaS3Uri": "s3://backendstack-sampledeployamplifycodegenassetsampl-63t4kvlfepws/model-schema.graphql",
+    "awsAppsyncRegion": "us-east-1",
+    "AppSyncAuthType": "API_KEY"
+  }
+}
