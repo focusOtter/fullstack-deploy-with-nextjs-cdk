@@ -1,4 +1,5 @@
 # NextJS & AWS CDK Full-Stack App
+!['YouTube Thumbnail](https://github.com/focusOtter/fullstack-deploy-with-nextjs-cdk/assets/5106417/9aaaabd2-409d-401f-8ec8-ec548b4d10cc)
 
 Unlock the power of Next JS and AWS in real-time deployment! This repo accompanies the tutorial where we navigate the CI/CD pipeline to build an AI application using TypeScript. A perfect resource for aspiring full-stack developers.
 
