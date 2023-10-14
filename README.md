@@ -1,40 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS & AWS CDK Full-Stack App
 
-## Getting Started
+Unlock the power of Next JS and AWS in real-time deployment! This repo accompanies the tutorial where we navigate the CI/CD pipeline to build an AI application using TypeScript. A perfect resource for aspiring full-stack developers.
 
-First, run the development server:
+## Video Tutorial
+
+🎥 [Watch the full tutorial on YouTube](https://youtu.be/6-Z7xJCp-Zw)
+
+### Video Chapters
+
+- [00:00](https://youtu.be/6-Z7xJCp-Zw?t=0) Introduction
+- [01:24](https://youtu.be/6-Z7xJCp-Zw?t=84) Setting Up the Application
+- [03:43](https://youtu.be/6-Z7xJCp-Zw?t=223) Deploying the CDK Backend
+- [08:14](https://youtu.be/6-Z7xJCp-Zw?t=494) Connecting Frontend to Backend
+- [11:38](https://youtu.be/6-Z7xJCp-Zw?t=698) Automating Code Generation
+- [15:12](https://youtu.be/6-Z7xJCp-Zw?t=912) Deploying the Full App
+- [18:34](https://youtu.be/6-Z7xJCp-Zw?t=1114) Testing the Deployed App
+- [22:26](https://youtu.be/6-Z7xJCp-Zw?t=1346) Successfully Calling the API
+- [24:27](https://youtu.be/6-Z7xJCp-Zw?t=1467) Conclusion
+
+## Repo Structure
+
+- 🖥️ **Root**: Contains the NextJS frontend application.
+- 🛠️ **/backend**: Houses the AWS CDK app for backend deployment.
+
+## Installation & Setup
+
+### Pre-requisites
+
+- Make sure you have Node.js and npm installed.
+- AWS CLI configured with appropriate permissions.
+
+### Steps
+
+1. **Frontend Setup**
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Backend Setup**
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+cd backend
+npm install
+{update the values in `lib/backend-stack.ts`}
+cdk deploy
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Usage
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Once both frontend and backend setups are done, you can access the NextJS app on `http://localhost:3000` and interact with the AI functionalities backed by AWS resources deployed via CDK.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contributions
 
-## Learn More
+Feel free to fork the repo and make contributions. Pull requests are welcome!
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+MIT
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Happy coding! If you find this resource helpful, consider giving the YouTube video a 👍 and subscribe for more tutorials.
